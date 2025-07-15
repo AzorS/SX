@@ -56,9 +56,5 @@ Exemples d'URL :
 - `/connexion`
 
 ## 👥 Équipe
-Projet initié en novembre 2023 par [AzorS].
-
----
-
-> Ce projet est en développement actif. Toute contribution est bienvenue !
+Projet initié en novembre 2023 par Nicolas, Marwan et Akram. 
 
