@@ -1,3 +1,4 @@
+=======
 # ScienceXpert (SX)
 
 ## 🧠 Projet éducatif open-source
@@ -60,3 +61,4 @@ Projet initié en novembre 2023 par [AzorS].
 ---
 
 > Ce projet est en développement actif. Toute contribution est bienvenue !
+
