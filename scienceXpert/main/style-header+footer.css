@@ -1,0 +1,623 @@
+.loader-img {
+  width: 15%;
+  height: auto;
+}
+
+.loader-text {
+  color: #797272;
+}
+
+/* Pour assurer la compatibilité avec les petits écrans */
+@media screen and (max-width: 830px) {
+  header {
+    height: 100px;
+    /* Réduit la hauteur du header */
+  }
+
+  nav {
+    top: 100px;
+    /* Ajuste la position du nav */
+  }
+
+  body {
+    margin-top: 160px;
+    /* Réduit l'espace en haut du contenu */
+  }
+}
+
+nav {
+  margin-top: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  align-items: center;
+}
+
+/************HEADER ET NAV****************/
+
+/* Supprimer toutes les marges et paddings par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Évite que les marges ou paddings n'ajoutent de la taille */
+}
+
+html,
+body {
+  height: 100%;
+  /* Pleine hauteur */
+  overflow-x: hidden;
+  /* Cache tout débordement horizontal */
+  box-sizing: border-box;
+}
+
+/* Header et Nav fixes en haut de l'écran */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  /* Pour s'assurer qu'il est au-dessus des autres éléments */
+  background-color: #FFF06B;
+  /* Conserve la couleur de fond */
+  height: 100px;
+  /* Hauteur déjà définie */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Ajoute une ombre légère pour la séparation */
+}
+
+.logo_header {
+  position: absolute;
+  top: 50%;
+  /* Centre verticalement */
+  left: 50%;
+  /* Centre horizontalement */
+  transform: translate(-50%, -50%);
+}
+
+
+.logo_header_pic {
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  /* Conserve les proportions */
+}
+
+.connexion_header {
+  display: flex;
+  flex-direction: column;
+  /* Icône au-dessus, texte en dessous */
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #FAC900;
+  border-radius: 30px;
+  /* Arrondi complet */
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  width: 120px;
+  /* Taille fixe */
+  height: 60px;
+  /* Hauteur fixe */
+  position: absolute;
+  top: 20%;
+  /* Centre verticalement */
+  right: 20px;
+  /* Aligné à droite */
+  transition: 0.3s;
+  /* Animation douce */
+}
+
+.connexion_header:hover {
+  background-color: #f5b800;
+  /* Changement de couleur au survol */
+  transform: scale(1.05);
+  /* Légère augmentation de taille au survol */
+}
+
+.connexion_header i {
+  font-size: 20px;
+  /* Taille de l'icône */
+  margin-bottom: 5px;
+  /* Espace entre icône et texte */
+}
+
+.header_primary {
+  background-color: gold;
+  width: 100%;
+}
+
+/****NAV*****/
+
+.section {
+  position: fixed;
+  /* Fixe le nav */
+  display: flex;
+  background-color: #fff06b;
+  padding: 0;
+  border-radius: 0 0 20px 20px;
+  background-clip: padding-box;
+  gap: 80px;
+  /* Espacement uniforme entre les items */
+
+
+  /*Style arrondi de la bordure*/
+  @media screen and (max-width: 830px) {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    right: 0;
+    flex-direction: column;
+    z-index: 10;
+  }
+}
+
+nav .section a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  line-height: 30px;
+  background-color: transparent;
+  /* Pas de fond */
+  font-weight: bold;
+  /* Rendre le texte plus visible */
+  transition: none;
+  /* Pas de transition ou animation */
+}
+
+.section_accueil {
+  padding: 1rem 2vw 1rem 2vw;
+  margin: 0;
+
+  @media screen and (max-width: 830px) {
+    text-align: center;
+  }
+}
+
+.section_accueil:hover {
+  background-color: #f4f4a4;
+  border-radius: 0 0 0 20px;
+  background-clip: padding-box;
+
+  @media screen and (max-width: 830px) {
+    border-radius: 0;
+    /* Sur les smartphones */
+  }
+}
+
+/* Animation et effets de survol du menu principal */
+nav .section_terminale a:hover {
+  color: #f5b800;
+  /* Couleur du texte au survol pour les éléments principaux */
+  background-color: transparent;
+  /* Pas de fond au survol */
+}
+
+/* Animation et effets de survol du menu principal */
+nav .section_sup a:hover {
+  color: #f5b800;
+  /* Couleur du texte au survol pour les éléments principaux */
+  background-color: transparent;
+  /* Pas de fond au survol */
+}
+
+/* Animation et effets de survol du menu principal */
+nav .section_qcm a:hover {
+  color: #f5b800;
+  /* Couleur du texte au survol pour les éléments principaux */
+  background-color: transparent;
+  /* Pas de fond au survol */
+}
+
+/* Animation et effets de survol du menu principal */
+nav .section_ai a:hover {
+  color: #f5b800;
+  /* Couleur du texte au survol pour les éléments principaux */
+  background-color: transparent;
+  /* Pas de fond au survol */
+}
+
+/*********************************/
+
+/* Style de la section Terminale */
+.section_terminale {
+  padding: 1rem 2vw;
+  display: flex;
+  margin: 0;
+  position: relative;
+}
+
+/* Style du lien "Terminale" */
+.terminale {
+  margin: auto;
+
+  @media screen and (max-width: 830px) {
+    margin: 0;
+  }
+}
+
+.section_sup {
+  padding: 1rem 2vw 1rem 2vw;
+  display: flex;
+  margin: 0;
+  position: relative;
+}
+
+.sup {
+  margin: auto;
+
+  @media screen and (max-width: 830px) {
+    margin: 0;
+  }
+}
+
+.section_qcm {
+  padding: 1rem 2vw 1rem 2vw;
+  display: flex;
+  margin: 0;
+  position: relative;
+}
+
+.qcm {
+  margin: auto;
+
+  @media screen and (max-width: 830px) {
+    margin: 0;
+  }
+}
+
+.section_ai {
+  padding: 1rem 2vw 1rem 2vw;
+  display: flex;
+  margin: 0;
+  position: relative;
+}
+
+.ai {
+  margin: auto;
+
+  @media screen and (max-width: 830px) {
+    margin: 0;
+  }
+}
+
+/* Assurer qu'il n'y a pas de fond derrière l'élément au survol */
+nav .section .section_terminale {
+  background-color: transparent;
+  /* Assurer qu'il n'y a pas de fond derrière */
+}
+
+nav .section .section_terminale:hover {
+  background-color: transparent;
+  /* Pas de fond au survol */
+}
+
+/* Assurer qu'il n'y a pas de fond derrière l'élément au survol */
+nav .section .section_sup {
+  background-color: transparent;
+  /* Assurer qu'il n'y a pas de fond derrière */
+}
+
+nav .section .section_sup:hover {
+  background-color: transparent;
+  /* Pas de fond au survol */
+}
+
+/* Assurer qu'il n'y a pas de fond derrière l'élément au survol */
+nav .section .section_qcm {
+  background-color: transparent;
+  /* Assurer qu'il n'y a pas de fond derrière */
+}
+
+nav .section .section_qcm:hover {
+  background-color: transparent;
+  /* Pas de fond au survol */
+}
+
+/* Assurer qu'il n'y a pas de fond derrière l'élément au survol */
+nav .section .section_ai {
+  background-color: transparent;
+  /* Assurer qu'il n'y a pas de fond derrière */
+}
+
+nav .section .section_ai:hover {
+  background-color: transparent;
+  /* Pas de fond au survol */
+}
+
+
+/*------Animation dans la toolbar---------*/
+
+
+/* Assurer qu'il n'y a pas de fond lors du focus ou du clic */
+nav .section a:focus,
+nav .section a:active {
+  background-color: transparent;
+  /* Pas de fond lors du focus ou clic */
+}
+
+/* Éléments principaux du menu */
+nav .section>a:hover {
+  color: #d9af08;
+  /* Jaune doré */
+  background-color: transparent;
+  /* Pas de fond */
+}
+
+/* Image dans les liens */
+nav .section img {
+  width: 24px;
+  /* Réduit la largeur */
+  height: 24px;
+  /* Réduit la hauteur */
+  margin-right: 10px;
+  /* Ajoute un petit espace entre l'icône et le texte */
+  vertical-align: middle;
+  /* Centre verticalement */
+}
+
+/* Suppression des marges et paddings par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------------Menu sous-déroulant--------------*/
+
+/* Menu déroulant */
+.sous-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 10px 0;
+  /* Ajoute un peu d'espace intérieur */
+  margin: 0;
+
+  width: 200px;
+  /* Fixe la largeur */
+  background-color: #d8cc9d;
+  /* Fond */
+  border-radius: 10px;
+  /* Arrondir tous les coins */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  /* Ombre plus prononcée */
+
+  z-index: 9999;
+  /* Au-dessus des autres éléments */
+
+  opacity: 0;
+  /* Caché par défaut */
+  transform: translateY(-10px);
+  /* Décalage initial */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  /* Animation fluide */
+}
+
+/* Affichage avec animation */
+.section_terminale:hover .sous-menu,
+.section_sup:hover .sous-menu,
+.section_qcm:hover .sous-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  /* Descente fluide */
+}
+
+.sous-menu li {
+  padding: 12px 20px;
+  /* Espace intérieur */
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  /* Texte sombre par défaut */
+  cursor: pointer;
+  /* Curseur interactif */
+  text-align: left;
+  /* Alignement du texte */
+  border-bottom: 1px solid #000000;
+  /* Ligne séparatrice */
+  width: calc(95%);
+  /* Forcer la largeur des traits */
+}
+
+.section_qcm .sous-menu li:hover {
+  color: #E53935;
+  background-color: transparent;
+  transform: translateX(5px);
+}
+
+/* Éléments des sous-menus */
+.sous-menu li a:hover {
+  color: #E53935;
+  /* Bleu au survol */
+  background-color: transparent;
+  /* Pas de fond */
+  transform: translateX(5px);
+  /* Animation légère */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+/* Hover */
+.sous-menu li:hover {
+  color: #E53935;
+  /* Texte rouge au survol */
+  transform: translateX(5px);
+  /* Effet d'animation légère */
+}
+
+.sous-menu li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #E53935;
+  /* Rouge vif */
+  transform: scaleX(0);
+  /* Invisible au départ */
+  transition: transform 0.3s ease;
+  /* Animation fluide */
+}
+
+.sous-menu li:hover::after {
+  transform: scaleX(1);
+  /* Affiche la ligne au survol */
+}
+
+/**********Bas de page***************/
+
+footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  /* Plus besoin d'être en absolute */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  /* Ombre en haut du footer */
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+footer nav {
+  margin-top: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+
+/* Ajout d'un espace entre les lignes de texte */
+footer p {
+  margin-top: 15px;
+  /* Espacement entre les paragraphes */
+}
+
+/* Augmenter l'écart entre les liens */
+footer nav a {
+  margin: 0 15px;
+  /* Espacement horizontal entre les liens */
+  font-size: 14px;
+  /* Taille de police adaptée */
+}
+
+/* Optionnel : Espacement vertical si besoin */
+footer nav {
+  margin-bottom: 10px;
+  /* Ajout d'espace en bas du bloc navigation */
+}
+
+/*couleur logo ytb*/
+.fab.fa-youtube {
+  color: red;
+  font-size: 1em;
+  margin-right: 1em;
+}
+
+p {
+  margin: 0;
+}
+
+
+/*Pop up effet de style*/
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  max-width: 40%;
+  /* Ajustez la largeur maximale selon vos besoins */
+}
+
+.modal-content {
+  text-align: center;
+  margin: 0 auto;
+  /* Centre le contenu horizontalement */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.send-btn {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #2980b9;
+}

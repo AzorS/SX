@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3498db">
+  <meta name="background_color" content="#ffffff">
+  <meta name="description"
+    content="Site qui fournit des outils pédagogiques pour les étudiants de la terminale aux études postBac.">
+  <title>SX - Terminale : Géométrie dans le plan</title>
+  <link href="/scienceXpert/math_terminale/cours_td/suites/suites.css" rel="stylesheet">
+
+  <link rel="icon" href="/scienceXpert/images/icon.png">
+  <!--Police d'écriture-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--Input du logo youtube-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!--logo utilisateur en haut à droite-->
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <!--On créé d'abord les éléments principaux pour chaque élément-->
+    <div class="logo_header">
+      <a href="/scienceXpert/main/index.html"><img class="logo_header_pic" src="/scienceXpert/images/logo.png"
+          alt="Logo de ScienceXpert"></a>
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Rechercher un cours...">
+      <button type="submit" aria-label="Rechercher">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </header>
+
+
+  <nav>
+    <!--Puis on créé les sous-sections on l'ou peut naviguer-->
+    <div class="section">
+      <a class="section_accueil" href="/scienceXpert/main/index.html">Accueil</a>
+
+      <div class="section_terminale">
+        <a class="terminale" href="terminale.html">Terminale</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_terminale">
+          <li>
+            <a href="#">Mathématiques</a>
+            <ul class="sous-sous-menu_terminale">
+              <li><a href="/version_3/terminale_math_c&e.html">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+            <ul class="sous-sous-menu_terminale">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+            <ul class="sous-sous-menu_terminale">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_sup">
+        <a class="sup" href="sup.html">Sup'</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_sup">
+          <li>
+            <a href="#">Mathématiques</a>
+            <ul class="sous-sous-menu_sup">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+            <ul class="sous-sous-menu_sup">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+            <ul class="sous-sous-menu_sup">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_qcm">
+        <a class="qcm" href="qcm.html">QCM</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_qcm">
+          <li>
+            <a href="#">Mathématiques</a>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_banque">
+        <a class="banque" href="sujets_concours.html">Sujets de concours</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_banque">
+          <li>
+            <a href="#">Mathématiques</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <a class="connexion_header" href="connexion.html">
+        <i class="fas fa-user"></i> Se connecter
+      </a>
+
+    </div>
+
+  </nav>
+
+  <main>
+    <br>
+    <div class="title">
+      <h1>Géométrie dans l'espace</h1>
+      <div class="line"> </div>
+    </div>
+    <br>
+    <section class="colored-banner_1">
+      <div class="content">
+        <h2>Le cours</h2>
+      </div>
+    </section>
+    <br>
+    <iframe id="pdfViewer" src="geom-plan.pdf" width="80%" height="500px"
+      title="Cours sur la la géométrie dans le plan.">
+    </iframe>
+    <br>
+    <section class="colored-banner_1">
+      <div class="content">
+        <h2>Les exercices</h2>
+      </div>
+    </section>
+    <br>
+    <div class="container_TD">
+      <iframe class="exos" src="#" width="40%" height="500px"
+        title="Exercices sur la géométrie dans l'espace"> </iframe>
+      <iframe class="correction" src="#" width="40%" height="500px"
+        title="Corrections des exercices sur la géométrie dans l'espace"> </iframe>
+
+    </div>
+    <br>
+  </main>
+</body>
+
+<footer>
+  <nav>
+    <a id="contactLink" href="#">Nous contacter</a>
+    <!-- Pop-up -->
+    <div class="modal" id="contactModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="subject">Objet :</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <span id="error-message" style="color: red;"></span>
+            <button type="button" class="send-btn" onclick="sendEmail()">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <style>
+      #message {
+        width: 20vw;
+        /* 20% de la largeur de la vue (viewport) */
+        height: 20vh;
+        /* 20% de la hauteur de la vue (viewport) */
+        resize: none;
+        /* Désactive la possibilité de redimensionner manuellement le champ de texte */
+      }
+    </style>
+    <script src="script.js"></script>
+    <a href="cgu_user.html">Conditions Générales d'Utilisation</a>
+    <a href="https://www.youtube.com" target="_blank">
+      <i class="fab fa-youtube"></i> Visitez notre chaîne YouTube
+    </a>
+  </nav>
+  <p>&copy; 2024 ScienceXpert. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</html>

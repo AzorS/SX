@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3498db">
+  <meta name="background_color" content="#ffffff">
+  <meta name="description"
+    content="Site qui fournit des outils pédagogiques pour les étudiants de la terminale aux études postBac.">
+  <title>ScienceXpert - Terminale : Mathématiques</title>
+  <link href="/scienceXpert/math_terminale/style-math.css" rel="stylesheet">
+  <link rel="stylesheet" href="/scienceXpert/main/style-header+footer.css">
+
+  <link rel="icon" href="/scienceXpert/images/icon.png">
+  <!--Police d'écriture-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--Input du logo youtube-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!--logo utilisateur en haut à droite-->
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <!--On créé d'abord les éléments principaux pour chaque élément-->
+    <div class="logo_header">
+      <a href="/scienceXpert/main/index.html"><img class="logo_header_pic" src="/scienceXpert/images/logo.png"
+          alt="Logo de ScienceXpert"></a>
+    </div>
+    <a class="connexion_header" href="/scienceXpert/connexion/connexion.html">
+      <img src="/scienceXpert/images/logo_login.png" alt="Logo carré" style="width: 25px; height: 25px;"> Se connecter
+    </a>
+
+  </header>
+
+
+  <nav>
+    <!--Puis on créé les sous-sections on l'ou peut naviguer-->
+    <div class="section">
+      <a class="section_accueil" href="/scienceXpert/main/index.html">
+        <img src="/scienceXpert/images/logo_home.png" alt="Logo carré" style="width: 25px; height: 25px;">
+        Accueil
+      </a>
+
+      <div class="section_terminale">
+        <img src="/scienceXpert/images/logo_term.png" alt="Logo carré" style="width: 30px; height: 30px;">
+        <a class="terminale" href="#">
+          Terminale
+        </a>
+        <ul class="sous-menu">
+          <li>
+            <a href="/scienceXpert/math_terminale/math_terminale.html">
+              Mathématiques
+            </a>
+            <!--Sous-sous liste-->
+
+          </li>
+          <li>
+            <a href="/scienceXpert/physique_terminale/physique_terminale.html">Physique</a>
+          </li>
+          <li>
+            <a href=" /scienceXpert/chimie_terminale/chimie_terminale.html">Chimie</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_sup">
+        <img src="/scienceXpert/images/logo_sup.png" alt="Logo carré" style="width: 30px; height: 30px;">
+        <a class="sup" href="#">Sup'</a>
+        <ul class="sous-menu">
+          <li>
+            <a href="#">
+              Mathématiques
+            </a>
+
+          </li>
+          <li>
+            <a href="#">
+              Physique
+            </a>
+
+          </li>
+          <li>
+            <a href="#">
+              Chimie
+            </a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_qcm">
+        <img src="/scienceXpert/images/logo_qcm.png" alt="Logo carré" style="width: 30px; height: 30px;">
+        <a class="qcm" href="#">QCM</a>
+        <ul class="sous-menu">
+          <a href="#">
+            <li> Mathématiques </li>
+          </a>
+          <a href="#">
+            <li>Physique </li>
+          </a>
+          <a href="#">
+            <li>Chimie </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="section_ai">
+        <img src="/scienceXpert/images/logo_ai.png" alt="Logo carré" style="width: 30px; height: 30px;">
+        <a class="ai" href="#">Mon IA</a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <main>
+    <div class="titre_page">
+      <div class="line"> </div>
+      <h1>QCM</h1>
+      <div class="line"> </div>
+    </div>
+    <section>
+      <h2>Analyse</h2>
+      <div class="buttons">
+        <!-- Utilisation de 3 boutons par ligne -->
+        <a href="analyse.html" class="btn red">Fonctions continues</a>
+        <a href="analyse.html" class="btn red">Fonctions dérivables</a>
+        <a href="analyse.html" class="btn red">Fonctions jsp</a>
+      </div>
+      <div id="analyse-extra" class="extra hidden">
+        <a href="analyse.html" class="btn red">Intégrales définies</a>
+        <a href="analyse.html" class="btn red">Séries numériques</a>
+        <a href="analyse.html" class="btn red">Limites et asymptotes</a>
+      </div>
+      <div class="center">
+        <button class="toggle-btn" onclick="toggleSection('analyse-extra')">Voir plus ▼</button>
+      </div>
+    </section>
+
+    <!-- Probabilités -->
+    <section>
+      <h2>Probabilités</h2>
+      <div class="buttons">
+        <a href="probabilites.html" class="btn green">Variables aléatoires</a>
+      </div>
+      <div id="proba-extra" class="extra hidden">
+        <a href="probabilites.html" class="btn green">Lois de probabilité</a>
+        <a href="probabilites.html" class="btn green">Espérance mathématique</a>
+        <a href="probabilites.html" class="btn green">Variance et écart-type</a>
+      </div>
+      <div class="center">
+        <button class="toggle-btn" onclick="toggleSection('proba-extra')">Voir plus ▼</button>
+      </div>
+    </section>
+
+    <!-- Algèbre -->
+    <section>
+      <h2>Algèbre</h2>
+      <div class="buttons">
+        <a href="algebre.html" class="btn orange">Matrices et déterminants</a>
+      </div>
+      <div id="algebre-extra" class="extra hidden">
+        <a href="algebre.html" class="btn orange">Systèmes linéaires</a>
+        <a href="algebre.html" class="btn orange">Espaces vectoriels</a>
+        <a href="algebre.html" class="btn orange">Polynômes</a>
+      </div>
+      <div class="center">
+        <button class="toggle-btn" onclick="toggleSection('algebre-extra')">Voir plus ▼</button>
+      </div>
+    </section>
+
+    <!-- Maths Expertes -->
+    <section>
+      <h2>Maths Expertes</h2>
+      <div class="buttons">
+        <a href="maths_expertes.html" class="btn purple">Variables complexes</a>
+      </div>
+      <div id="maths-extra" class="extra hidden">
+        <a href="maths_expertes.html" class="btn purple">Fonctions analytiques</a>
+        <a href="maths_expertes.html" class="btn purple">Transformations de Fourier</a>
+        <a href="maths_expertes.html" class="btn purple">Suites et séries</a>
+      </div>
+      <div class="center">
+        <button class="toggle-btn" onclick="toggleSection('maths-extra')">Voir plus ▼</button>
+      </div>
+    </section>
+
+    <!-- Les sujets incontournables -->
+    <section class="highlight">
+      <h3>Les sujets incontournables</h3>
+      <div class="card_container">
+        <div class="card">
+          <h4>Voyage au pays des maths</h4>
+          <p>Ce sujet traite des mathématiques et permet d’avoir un premier aperçu des nombres complexes et des
+            intégrales.</p>
+          <div class="details">
+            <span>⭐ Très difficile</span>
+            <span>⏱️ 20 min</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Voyage au pays des maths</h4>
+          <p>Ce sujet traite des mathématiques et permet d’avoir un premier aperçu des nombres complexes et des
+            intégrales.</p>
+          <div class="details">
+            <span>⭐ Très difficile</span>
+            <span>⏱️ 20 min</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4>Voyage au pays des maths</h4>
+          <p>Ce sujet traite des mathématiques et permet d’avoir un premier aperçu des nombres complexes et des
+            intégrales.</p>
+          <div class="details">
+            <span>⭐ Très difficile</span>
+            <span>⏱️ 20 min</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QCM -->
+    <section class="QCM">
+      <h3>QCM</h3>
+      <div class="badges">
+        <p>Vos badges :</p>
+        <div class="badge-list">
+          <img src="/scienceXpert/images/badge_001.png" alt="Badge Icon" style="width: 60px; height: 60px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Script intégré -->
+    <script>
+      function toggleSection(id) {
+        const section = document.getElementById(id);
+        const button = section.nextElementSibling.querySelector('.toggle-btn');
+
+        if (section.classList.contains('hidden')) {
+          section.classList.remove('hidden');
+          button.innerText = "Voir moins ▲";
+        } else {
+          section.classList.add('hidden');
+          button.innerText = "Voir plus ▼";
+        }
+      }
+    </script>
+  </main>
+
+  <footer>
+    <nav>
+      <a id="contactLink" href="#">Nous contacter</a>
+      <!-- Pop-up -->
+      <div class="modal" id="contactModal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h2>Contactez-nous</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="subject">Objet :</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <span id="error-message" style="color: red;"></span>
+              <button type="button" class="send-btn" onclick="sendEmail()">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <style>
+        #message {
+          width: 20vw;
+          /* 20% de la largeur de la vue (viewport) */
+          height: 20vh;
+          /* 20% de la hauteur de la vue (viewport) */
+          resize: none;
+          /* Désactive la possibilité de redimensionner manuellement le champ de texte */
+        }
+      </style>
+      <script src="script.js"></script>
+      <a href="cgu_user.html">Conditions Générales d'Utilisation</a>
+      <a href="https://www.youtube.com" target="_blank">
+        <i class="fab fa-youtube"></i> Visitez notre chaîne YouTube
+      </a>
+    </nav>
+    <p>&copy; 2024 ScienceXpert. Tous droits réservés.</p>
+  </footer>
+
+</body>
+
+
+<script src="script.js"></script>
+
+</html>

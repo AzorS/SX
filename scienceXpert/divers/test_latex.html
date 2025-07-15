@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Un outil simple pour afficher et publier des équations LaTeX en ligne.">
+  <title>LaTeX Afficheur</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+    .A {
+      width: 80%;
+      margin: auto;
+      max-height: 200px; /* Hauteur maximale */
+      overflow-y: auto; /* Débordement vertical automatique */
+    }
+    #latex-input {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 10px;
+    }
+    #publish-button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    #info-button {
+      background-color: #ccc;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <textarea id="latex-input" placeholder="Entrez votre texte ou vos équations LaTeX ici"></textarea>
+    <button id="publish-button">Publier</button>
+    <button id="info-button">Info</button>
+  </div>
+  <br>
+  <div class ="A" id="latex-output"></div>
+
+  <script src="test_latex.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+    "questions": [
+        {
+            "question": "Quel est le postulat de Bohr ?",
+            "choices": ["Réponse 1", "Réponse 2", "Réponse 3"],
+            "correctAnswer": 1
+        }
+    ]
+}

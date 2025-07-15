@@ -1,0 +1,152 @@
+/* Général */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps */
+body {
+  font-family: "Arial", sans-serif;
+  background-image: url('/scienceXpert/images/logo.png');
+  background-position: 15% center; /* Logo fixé à gauche */
+  background-repeat: no-repeat;
+  background-size: 45% auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alignement à droite */
+  height: 100vh;
+  padding-right: 17%; /* Ajoute un padding pour ne pas coller au bord */
+  background-color: #f9f9f9;
+}
+/* Conteneur */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Formulaire */
+.form-box {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Champs du formulaire */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #000000;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border: 1px solid #000000;
+  outline: none;
+}
+
+/* Bouton */
+button {
+  padding: 8px 50px 8px 50px;
+  border-radius: 15px;
+  background-color: #FFF06B;
+  border: 2px solid black; /* Contour noir de 2px */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer; /* Change le curseur au survol */
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Liens */
+/* Style des liens dans le formulaire */
+.link {
+  display: block; /* Permet d'occuper toute la largeur disponible */
+  text-align: left; /* Aligne le texte à gauche */
+  margin-top: 15px; /* Ajoute un espacement au-dessus */
+  font-size: 14px;
+  color: #000000; /* Couleur verte */
+  text-decoration: none; /* Supprime le soulignement par défaut */
+}
+
+/* Effet au survol */
+.link:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
+
+/* Gestion du mot de passe */
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: #000000;
+}
+
+.toggle-password:hover {
+  color: orange; /* Changement de couleur au survol */
+}
+
+.g-recaptcha {
+  margin-top: 10px; /* Décale le bouton vers le bas */
+  margin-bottom: 15px;
+}
+
+.return_ref {
+  padding: 8px;
+  border-radius: 15px;
+  background-color: white;
+  border: 2px solid black; /* Contour noir de 2px */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer; /* Change le curseur au survol */
+  margin-top: 20px; /* Décale le bouton vers le bas */
+  display: inline-block; /* Pour éviter qu'il s'étende sur toute la largeur */
+}
+
+.return_ref:hover {
+  background-color: black; /* Fond noir au survol */
+  color: white; /* Texte blanc au survol */
+}
+

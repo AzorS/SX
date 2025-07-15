@@ -1,0 +1,44 @@
+[
+  {
+    "question": "qcm-question/1.png",
+    "options": ["A", "B", "C"],
+    "answer": "A",
+    "subject": "algebre"
+  },
+  {
+    "question": "qcm-question/2.png",
+    "options": ["A", "B", "C"],
+    "answer": "C",
+    "subject": "analyse"
+  },
+  {
+    "question": "qcm-question/3.png",
+    "options": ["A", "B", "C"],
+    "answer": "A",
+    "subject": "probabilite"
+  },
+  {
+    "question": "qcm-question/4.png",
+    "options": ["A", "B", "C"],
+    "answer": "B",
+    "subject": "algebre"
+  },
+  {
+    "question": "qcm-question/5.png",
+    "options": ["A", "B", "C"],
+    "answer": "B",
+    "subject": "algebre"
+  },
+  {
+    "question": "qcm-question/6.png",
+    "options": ["A", "B", "C"],
+    "answer": "B",
+    "subject": "algebre"
+  },
+  {
+    "question": "qcm-question/7.png",
+    "options": ["A", "B", "C"],
+    "answer": "B",
+    "subject": "algebre"
+  }
+]

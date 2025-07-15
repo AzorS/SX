@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  align-items: center;
+}
+
+/**SUJETS***/
+
+.container_sujets {
+  margin-bottom: 10%;
+}
+
+.container_sujets ul {
+  list-style: none;
+  width: 95%;
+}
+
+.container_sujets ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5px 5px 5px;
+  margin-left: -2%;
+  margin-bottom: 8px;
+  background-color: #f4f4a4;
+  border: 1px solid black;
+  transition: transform 0.3s ease;
+  margin-left: 1%;
+}
+
+.container_sujets ul li:hover {
+  transform: scale(1.005);
+}
+
+.right {
+  display: flex;
+}
+
+.right .duree {
+  padding-right: 20px;
+  padding-top: 1px;
+}

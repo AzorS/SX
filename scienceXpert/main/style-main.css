@@ -1,0 +1,64 @@
+/*---------------MAIN--------------------*/
+
+nav .section a.section_accueil {
+  color: #d9af08;
+  font-weight: bold;
+}
+
+/* Section principale pour remplir l'espace */
+main {
+  flex: 1;
+  /* Remplit l'espace disponible entre le header et le footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  padding-top: 15%;
+  /* Compense la hauteur fixe du header */
+  text-align: center;
+  box-sizing: border-box;
+  /* Inclut les marges et padding dans la hauteur */
+}
+
+/* Ajustements pour les titres */
+main h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  /* Espacement sous le titre */
+}
+
+main h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #333;
+  /* Légèrement assombri */
+  margin-bottom: 30px;
+  /* Espacement sous la date */
+}
+
+.action-button {
+  padding: 10px 20px;
+  background-color: #f7e664;
+  /* Couleur jaune clair */
+  color: black;
+  border: none;
+  border-radius: 50px;
+  /* Arrondi complet */
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  font-size: 16px;
+  transform: scale(1.05);
+}
+
+.action-button:hover {
+  background-color: #f5b800;
+  transform: scale(1.05);
+  /* Légère augmentation de taille au survol */
+}
+
+footer {
+  margin-top: 150px;
+}

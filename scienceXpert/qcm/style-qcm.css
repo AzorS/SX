@@ -1,0 +1,159 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  align-items: center;
+}
+
+/**********MAIN**********/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.titre_page {
+  display: flex;
+  flex-direction: row;
+}
+
+.titre_page .line {
+  left: calc(10px + 100%);
+  margin: auto;
+  width: 30%;
+  height: 2px;
+  background-color: #000000;
+}
+
+main {
+  margin-top: 120px;
+}
+
+/* Général */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.titre_page {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+
+.buttons,
+.extra {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 colonnes */
+  gap: 10px;
+  /* Espacement entre les boutons */
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+}
+
+.btn.red {
+  background-color: #ff6b6b;
+}
+
+.btn.green {
+  background-color: #77dd77;
+}
+
+.btn.orange {
+  background-color: #ff9f40;
+}
+
+.btn.purple {
+  background-color: #e573f6;
+}
+
+/* Toggle Section */
+.extra.hidden {
+  display: none;
+}
+
+.center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.toggle-btn {
+  background-color: white;
+  color: #000000;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  transform: scale(1.05);
+}
+
+.highlight {
+  margin-top: 10px;
+  background-color: #FFF8B3;
+}
+
+.highlight h3 {
+  margin-bottom: 10px;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card {
+  padding: 10px;
+  background: #FFF06B;
+  border-radius: 5px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translate(-5px, -5px);
+  /* Légère élévation en diagonale */
+  box-shadow: 4px 4px 15px rgb(179, 104, 0, 0.4);
+  cursor: pointer;
+}
+
+
+.QCM {
+  background-color: #FFF06B;
+  margin-bottom: 100px;
+}
+
+.details {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.badge-list {
+  margin-top: 10px;
+}

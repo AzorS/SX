@@ -1,0 +1,137 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  align-items: center;
+}
+
+/***********HEADER*********/
+
+.section_accueil img {
+  filter: brightness(0) invert(0);
+}
+
+nav .section a.section_accueil {
+  color: black;
+}
+
+nav .section_terminale .terminale {
+  color: #d9af08;
+}
+
+nav .section_terminale img {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(94%) saturate(713%) hue-rotate(2deg) brightness(97%) contrast(90%);
+}
+
+
+/**********MAIN**********/
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.titre_page {
+  display: flex;
+  flex-direction: row;
+}
+
+.titre_page .line {
+  left: calc(10px + 100%);
+  margin: auto;
+  width: 30%;
+  height: 2px;
+  background-color: #000000;
+}
+
+main {
+  margin-top: 120px;
+}
+
+/* Général */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.titre_page {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.part_title {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+
+.container_cours {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container_TD {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container_TD {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Conteneur principal */
+.container_TD {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* Conteneur sujet/correction */
+.sujet-container,
+.corr-container {
+  width: 45%;
+}
+
+/* Boutons toggle */
+.toggle-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: #d6d6d6;
+  color: black;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Bouton hover */
+.toggle-btn:hover {
+  background: #ababab;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation de la flèche */
+.arrow {
+  transform: rotate(-90deg);
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+/* Cache iframe avec transition fluide */
+iframe {
+  transition: opacity 0.3s ease, height 0.3s ease;
+}

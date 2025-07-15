@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscription</title>
+  <link rel="stylesheet" href="style-inscription.css"> <!-- Fichier CSS global -->
+  <link rel="icon" href="/scienceXpert/images/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h2>Inscription</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="email">Adresse e-mail :</label>
+          <input type="email" id="email" name="email" placeholder="Ex : exemple@mail.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="username">Nom d'utilisateur :</label>
+          <input type="text" id="username" name="username" placeholder="Choisissez un nom" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Mot de passe :</label>
+          <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+            <span class="toggle-password" id="togglePassword1"><i class="fas fa-eye"></i></span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Confirmez le mot de passe :</label>
+          <div class="password-container">
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmez" required>
+            <span class="toggle-password" id="togglePassword2"><i class="fas fa-eye"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <!-- CAPTCHA Google -->
+          <div class="g-recaptcha" data-sitekey="6Ld4fqcqAAAAAGpHesLc2repooeqbFZRfycEwvAF"></div>
+        </div>
+        <div id="captchaError" style="color: red; font-size: 14px; margin-top: 10px; margin-bottom: 15px;"></div>
+
+        <button type="submit">Créer son compte</button>
+      </form>
+      
+      <a href="/scienceXpert/connexion/connexion.html" class="link">Déjà un compte ? Se connecter</a>
+      <a class="return_ref" href="/scienceXpert/main/index.html">Retour à l'accueil</a>
+    </div>
+  </div>
+
+  <script src="inscription.js"></script>
+
+</body>
+</html>

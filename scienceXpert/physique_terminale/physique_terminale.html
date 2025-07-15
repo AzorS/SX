@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3498db">
+  <meta name="background_color" content="#ffffff">
+  <link rel="manifest" href="page_chargement.json">
+  <meta name="description"
+    content="Site qui fournit des outils pédagogiques pour les étudiants de la terminale aux études postBac.">
+  <title>SX- Terminale : Physique</title>
+  <link href="/scienceXpert/physique_terminale/style-phys.css" rel="stylesheet">
+  <link rel="stylesheet" href="/scienceXpert/main/style-header+footer.css">
+
+  <link rel="icon" href="/scienceXpert/images/icon.png">
+  <!--Police d'écriture-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--Input du logo youtube-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!--logo utilisateur en haut à droite-->
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+</head>
+
+<body>
+  <header>
+    <!--On créé d'abord les éléments principaux pour chaque élément-->
+    <div class="logo_header">
+      <a href="/scienceXpert/main/index.html"><img class="logo_header_pic" src="/scienceXpert/images/logo.png"
+          alt="Logo de ScienceXpert"></a>
+    </div>
+
+    <div class="search">
+      <input type="text" placeholder="Rechercher un cours...">
+      <button type="submit" aria-label="Rechercher">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </header>
+
+
+  <nav>
+    <!--Puis on créé les sous-sections on l'ou peut naviguer-->
+    <div class="section">
+      <a class="section_accueil" href="index.html">Accueil</a>
+
+      <div class="section_terminale">
+        <a class="terminale" href="terminale.html">Terminale</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_terminale">
+          <li>
+            <a href="#">Mathématiques</a>
+            <ul class="sous-sous-menu_terminale">
+              <li><a href="terminale_math_c&e.html">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+            <ul class="sous-sous-menu_terminale">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+            <ul class="sous-sous-menu_terminale">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_sup">
+        <a class="sup" href="sup.html">Sup'</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_sup">
+          <li>
+            <a href="#">Mathématiques</a>
+            <ul class="sous-sous-menu_sup">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+            <ul class="sous-sous-menu_sup">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+            <ul class="sous-sous-menu_sup">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_qcm">
+        <a class="qcm" href="qcm.html">QCM</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_qcm">
+          <li>
+            <a href="#">Mathématiques</a>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_banque">
+        <a class="banque" href="sujets_concours.html">Sujets de concours</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_banque">
+          <li>
+            <a href="#">Mathématiques</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <a class="connexion_header" href="connexion.html">
+        <i class="fas fa-user"></i> Se connecter
+      </a>
+
+    </div>
+
+  </nav>
+
+  <main>
+    <div class="title">
+      <h1>Terminale - Physique</h1>
+      <div class="line"> </div>
+    </div>
+    <section class="colored-banner_1">
+      <div class="content">
+        <h2>Programme</h2>
+      </div>
+    </section>
+    <br>
+    <div class="container_chapitres">
+      <div class="algebre">
+        <h2>Mécanique</h2>
+        <ol type="1">
+          <a href="/scienceXpert/physique_terminale/cours_td/dynamique/dynamique.html">
+            <li>Dynamique du point matériel</li>
+          </a>
+          <a href="/scienceXpert/physique_terminale/cours_td/cinematique/cinematique.html">
+            <li>Cinématique du point matériel</li>
+          </a>
+          <a href="/scienceXpert/physique_terminale/cours_td/champ-unif/champ-unif.html">
+            <li>Mouvement dans un champ uniforme</li>
+          </a>
+          <a href="/scienceXpert/physique_terminale/cours_td/corps-celestes/corps-celestes.html">
+            <li>Mouvement des corps célestes</li>
+          </a>
+        </ol>
+      </div>
+      <div class="analyse">
+        <h2>Optique</h2>
+        <ol type="1">
+          <a href="/scienceXpert/physique_terminale/cours_td/diffraction/diffraction.html">
+            <li>Diffraction</li>
+          </a>
+          <a href="/scienceXpert/physique_terminale/cours_td/interferences/interferences.html">
+            <li>Interférences</li>
+          </a>
+          <a href="/scienceXpert/physique_terminale/cours_td/doppler/doppler.html">
+            <li>Effet Doppler et ondes</li>
+          </a>
+          <a href="/scienceXpert/physique_terminale/cours_td/lunette/lunette.html">
+            <li>Lunette astronomique</li>
+          </a>
+        </ol>
+      </div>
+      <div class="probabilites">
+        <h2>Electricité</h2>
+        <ol type="1">
+          <a href="/scienceXpert/physique_terminale/cours_td/electricite/electricite.html">
+            <li>Electrocinétique</li>
+          </a>
+        </ol>
+      </div>
+    </div>
+
+    <br>
+
+    <section class="colored-banner_1">
+      <div class="content">
+        <h2>QCM</h2>
+      </div>
+    </section>
+    <div class="container_qcm">
+      <ul>
+        <a href="/scienceXpert/math_terminale/qcm/qcm.html">
+          <li>
+            <div class="qcm_entete">
+              <div class="qcm_left"> Terminale </div>
+              <div class="qcm_right">
+                <span class="qcm_number"> 250 questions </span>
+              </div>
+            </div>
+            <div class="paragraph">
+              <p id="scoreParagraph_qcm_terminale"> Votre score actuel est : </p>
+              <p class="title_parag">Vos Badges</p>
+              <div class="badges_term">
+                <img id="b_5" src="/scienceXpert/images/badge_001.png" alt="Score supérieur à 5!"
+                  title="Badge récompensant un score supérieur à 5">
+                <img id="b_10" src="/scienceXpert/images/badge_001.png" alt="Score supérieur à 10!"
+                  title="Badge récompensant un score supérieur à 10">
+              </div>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </div>
+
+    <br>
+
+    <section class="colored-banner_1">
+      <div class="content">
+        <h2>Sujets d'entraînement</h2>
+      </div>
+    </section>
+    <div class="container_sujets">
+      <ul>
+        <a href="/scienceXpert/math_terminale/sujets/complexe/complexe.html">
+          <li>
+            <div class="left"> Autour des nombres complexes </div>
+            <div class="right">
+              <span class="duree"> 1 heure </span>
+              <span class="difficulte"> ★★★☆☆ </span>
+            </div>
+          </li>
+        </a>
+        <li>
+          <div class="left"> Voyage au pays des nombres entiers </div>
+          <div class="right">
+            <span class="duree"> 1 heure 30 minutes </span>
+            <span class="difficulte"> ★★★★☆ </span>
+          </div>
+        </li>
+        <li>
+          <div class="left"> Immersion chez PE : ça tourne mal, il écrit un programme d'urgence</div>
+          <div class="right">
+            <span class="duree"> 2 heure </span>
+            <span class="difficulte"> ★★☆☆☆ </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+    <script>
+      var score = parseInt(localStorage.getItem('score_phys_term')) || 0;
+      var scoreParagraph = document.getElementById('scoreParagraph_qcm_terminale');
+
+      var badge5 = document.getElementById('b_5');
+      var badge10 = document.getElementById('b_10');
+
+      scoreParagraph.innerHTML = "Votre score actuel est : " + score;
+
+      badge5.style.filter = 'grayscale(100%)';
+      badge10.style.filter = 'grayscale(100%)';
+
+      if (score >= 5) {
+        badge5.style.filter = 'grayscale(0%)';
+      }
+
+      if (score >= 10) {
+        badge10.style.filter = 'grayscale(0%)';
+      }
+
+    </script>
+  </main>
+</body>
+
+<footer>
+  <nav>
+    <a id="contactLink" href="#">Nous contacter</a>
+    <!-- Pop-up -->
+    <div class="modal" id="contactModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="subject">Objet :</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <span id="error-message" style="color: red;"></span>
+            <button type="button" class="send-btn" onclick="sendEmail()">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <style>
+      #message {
+        width: 20vw;
+        /* 20% de la largeur de la vue (viewport) */
+        height: 20vh;
+        /* 20% de la hauteur de la vue (viewport) */
+        resize: none;
+        /* Désactive la possibilité de redimensionner manuellement le champ de texte */
+      }
+    </style>
+    <script src="script.js"></script>
+    <a href="cgu_user.html">Conditions Générales d'Utilisation</a>
+    <a href="https://www.youtube.com" target="_blank">
+      <i class="fab fa-youtube"></i> Visitez notre chaîne YouTube
+    </a>
+  </nav>
+  <p>&copy; 2024 ScienceXpert. Tous droits réservés.</p>
+</footer>
+
+<script src="script.js"></script>
+
+</html>

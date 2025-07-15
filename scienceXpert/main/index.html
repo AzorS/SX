@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3498db">
+  <meta name="background_color" content="#ffffff">
+  <link rel="manifest" href="/scienceXpert/main/page_chargement.json">
+  <meta name="description"
+    content="Site qui fournit des outils pédagogiques pour les étudiants de la terminale aux études postBac.">
+  <title>ScienceXpert - Accueil</title>
+  <link rel="stylesheet" href="/scienceXpert/main/style-header+footer.css">
+  <link rel="stylesheet" href="/scienceXpert/main/style-main.css">
+
+  <link rel="icon" href="/scienceXpert/images/logo.png">
+  <!--Police d'écriture-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--Input du logo youtube-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!--logo utilisateur en haut à droite-->
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+
+  <!-- Ajout du style pour l'écran de chargement -->
+  <style>
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: beige;
+      /* Couleur de fond de l'écran de chargement */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      z-index: 1000;
+      /* Pour être sûr que l'écran de chargement est au-dessus de tout le contenu */
+    }
+  </style>
+
+  <!-- Ajout du script JavaScript pour masquer l'écran de chargement après 2 secondes -->
+
+  <script nonce="random-nonce">
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var loader = document.getElementById('loader');
+        loader.style.display = 'none';
+      }, 800);
+    });
+  </script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init("hIxShjOE39OVgbqtkx2si"); 
+  </script>
+  <script src="moteur.js" defer></script>
+</head>
+
+<body>
+
+  <div id="loader">
+    <img class="loader-img" src="/scienceXpert/images/waiting.gif">
+    <p class="loader-text">Chargement...</p>
+  </div>
+
+  <!-- On fait l'header dans la partie header et nav-->
+  <header>
+    <!--On créé d'abord les éléments principaux pour chaque élément-->
+    <div class="logo_header">
+      <a href="/scienceXpert/main/index.html"><img class="logo_header_pic" src="/scienceXpert/images/logo.png"
+          alt="Logo de ScienceXpert"></a>
+    </div>
+    <a class="connexion_header" href="/scienceXpert/connexion/connexion.html">
+      <img src="/scienceXpert/images/logo_login.png" alt="Logo carré" style="width: 25px; height: 25px;"> Se connecter
+    </a>
+
+  </header>
+
+
+  <nav>
+    <!--Puis on créé les sous-sections on l'ou peut naviguer-->
+    <div class="section">
+      <a class="section_accueil" href="/scienceXpert/main/index.html">
+        <img src="/scienceXpert/images/logo_home.png" alt="Logo carré" style="width: 25px; height: 25px;">
+        Accueil
+      </a>
+
+      <div class="section_terminale">
+        <img src="/scienceXpert/images/logo_term.png" alt="Logo carré" style="width: 30px; height: 30px;">
+        <a class="terminale" href="#">
+          Terminale
+        </a>
+        <ul class="sous-menu">
+          <li>
+            <a href="/scienceXpert/math_terminale/math_terminale.html">
+              Mathématiques
+            </a>
+            <!--Sous-sous liste-->
+
+          </li>
+          <li>
+            <a href="/scienceXpert/physique_terminale/physique_terminale.html">Physique</a>
+          </li>
+          <li>
+            <a href=" /scienceXpert/chimie_terminale/chimie_terminale.html">Chimie</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_sup">
+        <img src="/scienceXpert/images/logo_sup.png" alt="Logo carré" style="width: 30px; height: 30px;">
+        <a class="sup" href="#">Sup'</a>
+        <ul class="sous-menu">
+          <li>
+            <a href="#">
+              Mathématiques
+            </a>
+
+          </li>
+          <li>
+            <a href="#">
+              Physique
+            </a>
+
+          </li>
+          <li>
+            <a href="#">
+              Chimie
+            </a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_qcm">
+        <img src="/scienceXpert/images/logo_qcm.png" alt="Logo carré" style="width: 30px; height: 30px;">
+        <a class="qcm" href="#">QCM</a>
+        <ul class="sous-menu">
+          <a href="#">
+            <li> Mathématiques </li>
+          </a>
+          <a href="#">
+            <li>Physique </li>
+          </a>
+          <a href="#">
+            <li>Chimie </li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="section_ai">
+        <img src="/scienceXpert/images/logo_ai.png" alt="Logo carré" style="width: 30px; height: 30px;">
+        <a class="ai" href="#">Mon IA</a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <main>
+    <div class="container_head">
+      <div class="title">
+        <h1>ScienceXpert</h1>
+        <h2 > La référence de l'éducation numérique en France </h2>
+        <a href="#" class="action-button">En savoir plus</a> 
+      </div>
+    </div>
+  </main>
+</body>
+
+<footer>
+  <nav>
+    <a id=" contactLink" href="#">Nous contacter</a>
+    <!-- Pop-up -->
+    <div class="modal" id="contactModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="subject">Objet :</label>
+            <input type="text" id="subject" name="subject" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <span id="error-message" style="color: red;"></span>
+            <button type="button" class="send-btn" onclick="sendEmail()">Envoyer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <style>
+      #message {
+        width: 20vw;
+        /* 20% de la largeur de la vue (viewport) */
+        height: 20vh;
+        /* 20% de la hauteur de la vue (viewport) */
+        resize: none;
+        /* Désactive la possibilité de redimensionner manuellement le champ de texte */
+      }
+    </style>
+    <script src="script.js"></script>
+    <a href="cgu_user.html">Conditions Générales d'Utilisation</a>
+    <a href="https://www.youtube.com" target="_blank">
+      <i class="fab fa-youtube"></i> Visitez notre chaîne YouTube
+    </a>
+  </nav>
+  <p>&copy; 2024 ScienceXpert. Tous droits réservés.</p>
+</footer>
+
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#3498db">
+  <meta name="background_color" content="#ffffff">
+  <meta name="description"
+    content="Site qui fournit des outils pédagogiques pour les étudiants de la terminale aux études postBac.">
+  <title>ScienceXpert - Accueil</title>
+  <link rel="stylesheet" href="/scienceXpert/main/style-header+footer.css">
+  <link rel="stylesheet" href="/scienceXpert/math_terminale/qcm/style-qcm.css">
+
+  <link rel="icon" href="/scienceXpert/images/logo.png">
+  <!--Police d'écriture-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <!--Input du logo youtube-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!--logo utilisateur en haut à droite-->
+  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init("hIxShjOE39OVgbqtkx2si"); 
+  </script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo_header">
+      <a href="/scienceXpert/main/index.html"><img class="logo_header_pic" src="/scienceXpert/images/logo.png"
+          alt="Logo de ScienceXpert"></a>
+    </div>
+
+    <div class="search">
+      <input type="text" id="Barre_de_recherche" placeholder="Rechercher un cours..."
+        onkeyup="showSuggestions(this.value)">
+      <section class="liste_suggestions">
+        <ul id="suggestionsMenu"></ul>
+      </section>
+      <button type="submit" aria-label="Rechercher" onclick="toggleSuggestions()">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+
+  </header>
+
+
+  <nav>
+    <!--Puis on créé les sous-sections on l'ou peut naviguer-->
+    <div class="section">
+      <a class="section_accueil" href="/scienceXpert/main/index.html">Accueil</a>
+
+      <div class="section_terminale">
+        <a class="terminale" href="#">
+          Terminale
+        </a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_terminale">
+          <li>
+            <a href="/scienceXpert/math_terminale/math_terminale.html">
+              Mathématiques
+            </a>
+            <!--Sous-sous liste-->
+            <ul class="sous-sous-menu_terminale" id="math_t">
+              <a href="/scienceXpert/math_terminale/math_terminale.html">
+                <li>Cours et exercices</li>
+              </a>
+              <a href="#">
+                <li>Devoirs</li>
+              </a>
+              <a href="/scienceXpert/math_terminale/qcm/qcm.html">
+                <li>QCM</li>
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+            <ul class="sous-sous-menu_terminale" id="phys_t">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+            <ul class="sous-sous-menu_terminale" id="chim_t">
+              <li><a href="#">Cours et exercices</a></li>
+              <li><a href="#">Devoirs</a></li>
+              <li><a href="#">QCM</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_sup">
+        <a class="sup" href="sup.html">Sup'</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_sup">
+          <li>
+            <a href="#">
+              Mathématiques
+            </a>
+            <ul class="sous-sous-menu_sup" id="math_sup">
+              <a href="#">
+                <li>Cours et exercices</li>
+              </a>
+              <a href="#">
+                <li>Devoirs</li>
+              </a>
+              <a href="#">
+                <li>QCM</li>
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              Physique
+            </a>
+            <ul class="sous-sous-menu_sup" id="phys_sup">
+              <a href="#">
+                <li>Cours et exercices</li>
+              </a>
+              <a href="#">
+                <li>Devoirs</li>
+              </a>
+              <a href="#">
+                <li>QCM</li>
+              </a>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              Chimie
+            </a>
+            <ul class="sous-sous-menu_sup" id="chim_sup">
+              <a href="#">
+                <li>Cours et exercices</li>
+              </a>
+              <a href="#">
+                <li>Devoirs</li>
+              </a>
+              <a href="#">
+                <li>QCM</li>
+              </a>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_qcm">
+        <a class="qcm" href="/scienceXpert/math_terminale/qcm/qcm.html">QCM</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_qcm">
+          <li>
+            <a href="#">Mathématiques</a>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section_banque">
+        <a class="banque" href="sujets_concours.html">Sujets de concours</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <ul class="sous-menu_banque">
+          <li>
+            <a href="#">Mathématiques</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Physique</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Chimie</a>
+            <ul class="sous-sous-menu_banque">
+              <li><a href="#">Sujets</a></li>
+              <li><a href="#">Corrigés</a></li>
+              <li><a href="#">Conseils</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+
+      <a class="connexion_header" href="connexion.html">
+        <i class="fas fa-user"></i> Se connecter
+      </a>
+
+    </div>
+
+  </nav>
+
+  <main>
+    <div id="questionBox">
+      <form id="qcmForm">
+        <div id="questionContent" class="questionContent"></div>
+        <div id="optionsContainer">
+          <!-- Options réglables dans le script -->
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <aside>
+    <div class="container_data">
+      <p class="text-aside" id="scoreParagraph">Votre score : </p>
+      <button class="text-aside" id="resetButton">Réinitialiser son score</button>
+      <p class="text-aside">Taux de réussite (%)</p>
+      <div class="progress">
+        <div class="progress-bar-anal">Analyse</div>
+        <div class="progress-bar-prob">Probabilité</div>
+        <div class="progress-bar-alg">Algèbre</div>
+      </div>
+    </div>
+
+  </aside>
+
+
+  <footer>
+    <nav>
+      <a id="contactLink" href="#">Nous contacter</a>
+      <!-- Pop-up -->
+      <div class="modal" id="contactModal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h2>Contactez-nous</h2>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="subject">Objet :</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <span id="error-message" style="color: red;"></span>
+              <button type="button" class="send-btn" onclick="sendEmail()">Envoyer</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <style>
+        #message {
+          width: 20vw;
+          /* 20% de la largeur de la vue (viewport) */
+          height: 20vh;
+          /* 20% de la hauteur de la vue (viewport) */
+          resize: none;
+          /* Désactive la possibilité de redimensionner manuellement le champ de texte */
+        }
+      </style>
+      <script src="script.js"></script>
+      <a href="cgu_user.html">Conditions Générales d'Utilisation</a>
+      <a href="https://www.youtube.com" target="_blank">
+        <i class="fab fa-youtube"></i> Visitez notre chaîne YouTube
+      </a>
+    </nav>
+    <p>&copy; 2024 ScienceXpert. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    var currentQuestionIndex = 0;
+    var questions;
+    var score = parseInt(localStorage.getItem('score_phys_term')) || 0;
+
+    //Gestion des catégories
+
+    var nbAlgTrue = parseInt(localStorage.getItem('nbAlgTrue')) || 0;
+    var nbAlg = parseInt(localStorage.getItem('nbAlg')) || 0;
+    var progressBarAlg = document.querySelector('.progress-bar-alg');
+
+    var nbAnalTrue = parseInt(localStorage.getItem('nbAnalTrue')) || 0;
+    var nbAnal = parseInt(localStorage.getItem('nbAnal')) || 0;
+    var progressBarAnal = document.querySelector('.progress-bar-anal');
+
+    var nbProbTrue = parseInt(localStorage.getItem('nbProbTrue')) || 0;
+    var nbProb = parseInt(localStorage.getItem('nbProb')) || 0;
+    var progressBarProb = document.querySelector('.progress-bar-prob');
+
+    // Charger les questions
+    fetch('/scienceXpert/physique_terminale/qcm/data.json')
+      .then(response => response.json())
+      .then(data => {
+        questions = shuffleArray(data); //mélange
+        loadQuestion();
+      })
+      .catch(error => console.error('Erreur lors du chargement des questions:', error));
+
+    function shuffleArray(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    function loadQuestion() {
+      progressBarAlg.style.width = parseInt(nbAlgTrue / nbAlg * 100) + '%';
+      progressBarAnal.style.width = parseInt(nbAnalTrue / nbAnal * 100) + '%';
+      progressBarProb.style.width = parseInt(nbProbTrue / nbProb * 100) + '%';
+
+      var scoreParagraph = document.getElementById('scoreParagraph');
+      scoreParagraph.innerHTML = 'Votre score : ' + score;
+
+      if (currentQuestionIndex < questions.length) {
+        var questionData = questions[currentQuestionIndex];
+        var questionContent = document.getElementById('questionContent');
+        var optionsContainer = document.getElementById('optionsContainer');
+
+        if (questionData.subject == "algebre") {
+          nbAlg += 1;
+        }
+        if (questionData.subject == "analyse") {
+          nbAnal += 1;
+        }
+        if (questionData.subject == "probabilite") {
+          nbProb += 1;
+        }
+
+        questionContent.innerHTML = `<img src="${questionData.question}" alt="Question Image">`;
+
+        while (optionsContainer.firstChild) {
+          optionsContainer.removeChild(optionsContainer.firstChild);
+        }
+
+        questionData.options.forEach(function (option, index) {
+          var radioBtn = document.createElement('input');
+          radioBtn.type = 'radio';
+          radioBtn.name = 'q';
+          radioBtn.value = option;
+          radioBtn.required = true;
+
+          radioBtn.addEventListener('click', function () {
+            checkAnswer(option);
+          });
+
+          var label = document.createElement('label');
+          label.appendChild(radioBtn);
+          label.appendChild(document.createTextNode(option));
+
+          optionsContainer.appendChild(label);
+          optionsContainer.appendChild(document.createElement('br'));
+        });
+      } else {
+        alert('Félicitations ! Vous avez terminé le QCM.');
+      }
+    }
+
+    function checkAnswer(userAnswer) {
+      var correctAnswer = questions[currentQuestionIndex].answer;
+      alert('Votre réponse: ' + userAnswer + '\nRéponse correcte: ' + correctAnswer);
+
+      if (userAnswer == correctAnswer) {
+        score += 1;
+        if (questions[currentQuestionIndex].subject == "algebre") {
+          nbAlgTrue += 1;
+        }
+        if (questions[currentQuestionIndex].subject == "analyse") {
+          nbAnalTrue += 1;
+        }
+        if (questions[currentQuestionIndex].subject == "probabilite") {
+          nbProbTrue += 1;
+        }
+      }
+
+      localStorage.setItem('score_phys_term', score);
+
+      localStorage.setItem('nbAlg', nbAlg);
+      localStorage.setItem('nbAlgTrue', nbAlgTrue);
+      localStorage.setItem('nbAnal', nbAnal);
+      localStorage.setItem('nbAnalTrue', nbAnalTrue);
+      localStorage.setItem('nbProb', nbProb);
+      localStorage.setItem('nbProbTrue', nbProbTrue);
+
+      progressBarAlg.style.width = parseInt(nbAlgTrue / nbAlg * 100) + '%';
+      progressBarAnal.style.width = parseInt(nbAnalTrue / nbAnal * 100) + '%';
+      progressBarProb.style.width = parseInt(nbProbTrue / nbProb * 100) + '%';
+
+      currentQuestionIndex++;
+      loadQuestion();
+    }
+
+  </script>
+
+  <script>
+    function resetScore() {
+      score = 0;
+
+      nbAlg = 0;
+      nbAlgTrue = 0;
+
+      nbAnal = 0;
+      nbAnalTrue = 0;
+
+      nbProb = 0;
+      nbProbTrue = 0;
+
+      localStorage.setItem('score_phys_term', score);
+      localStorage.setItem('nbAlg', nbAlg);
+      localStorage.setItem('nbAlgTrue', nbAlgTrue);
+      localStorage.setItem('nbAnal', nbAnal);
+      localStorage.setItem('nbAnalTrue', nbAnalTrue);
+      localStorage.setItem('nbProb', nbProb);
+      localStorage.setItem('nbProbTrue', nbProbTrue);
+      var progressBarAlg = document.querySelector('.progress-bar-alg');
+      var progressBarAnal = document.querySelector('.progress-bar-anal');
+      var progressBarProb = document.querySelector('.progress-bar-prob');
+      progressBarAlg.style.width = '0%';
+      progressBarAnal.style.width = '0%';
+      progressBarProb.style.width = '0%';
+
+      alert("Le score a été réinitialisé !");
+      loadQuestion();
+    }
+
+    document.getElementById('resetButton').addEventListener('click', resetScore);
+
+  </script>
+</body>
+
+</html>

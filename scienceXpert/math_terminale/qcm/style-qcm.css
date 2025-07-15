@@ -1,0 +1,158 @@
+main {
+  padding-bottom: 10%;
+}
+
+.questionContent {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  width: 60%;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 2% auto 1% auto;
+}
+
+.questionContent img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#optionsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#optionsContainer label {
+  margin-right: 1%;
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 1% 9% 1% 9%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#optionsContainer label:hover {
+  background-color: #358239;
+}
+
+#optionsContainer input[type="radio"] {
+  display: none;
+}
+
+#feedbackContainer {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#nextQuestionButton {
+  display: none;
+  padding: 10px 20px;
+  margin-right: 300px;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #dac22b;
+  color: #ffffff;
+  border: 2px solid #9e9e9e;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#nextQuestionButton:hover {
+  background-color: #a87d05;
+  color: #ffffff;
+}
+
+aside {
+  padding: 2%;
+  background-color: beige;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  border-radius: 20px 0 0 20px;
+}
+
+.container_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#resetButton {
+  background-color: #c8c865;
+  padding: 5px;
+}
+
+.analyse-level {
+  display: flex;
+  flex-direction: row;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.text-aside {
+  margin-bottom: 5px;
+}
+
+.progress-bar-anal {
+  color: #716f6f;
+  width: 0%;
+  height: 3px;
+  margin-bottom: 17px;
+  background-color: #4CAF50;
+}
+
+.progress-bar-prob {
+  color: #716f6f;
+  width: 0%;
+  height: 3px;
+  margin-bottom: 17px;
+  background-color: #4CAF50;
+}
+
+.progress-bar-alg {
+  color: #716f6f;
+  width: 0%;
+  height: 3px;
+  margin-bottom: 17px;
+  background-color: #4CAF50;
+}
+
+
+.badge-text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.badges {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+#b_5,
+#b_10 {
+  width: 64px;
+}
+
+main {
+  margin-bottom: 100px;
+}
