@@ -1,0 +1,237 @@
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 80px 20px 80px;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-left h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero-left p {
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.desc-cours {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-orange {
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-jaune {
+  background-color: #f9d44a;
+  color: #333;
+  border: none;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-orange,
+.btn-jaune {
+  padding: 14px 24px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image {
+  max-width: 70%;
+  height: auto;
+}
+
+/* Section Public Cible */
+.public-target {
+  padding: 40px 40px;
+  margin-top: -40px; /* remonte visuellement la section */
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;
+  gap: 30px; /* petit espace entre les cartes */
+}
+
+.card {
+  background-color: #FFE066;
+  border-radius: 16px;
+  padding: 24px;
+  width: 20%; /* élargie pour un look plus sympa */
+  min-width: 230px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre le contenu */
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  border-radius: 8px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ————— Section “Ce que vous trouverez” ————— */
+.features {
+  padding: 40px 80px;
+}
+
+.features .section-title {
+  margin-bottom: 30px;
+}
+
+/* ————— Section “Ce que vous trouverez” : container relatif ————— */
+.features-container {
+  position: relative;
+  width: 80%;
+  height: 260px;       /* à ajuster selon le rendu vertical souhaité */
+  margin: 0 auto 60px;
+}
+
+/* ————— Post‑it éparpillés ————— */
+.features-container .feature {
+  position: absolute;
+  width: 240px;      /* ← avant : 200px, ici on agrandit */
+  height: 80px;      /* ← avant : 60px */
+  background-color: #FFE066;
+  border-radius: 8px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;   /* ← avant : 14px, plus gros texte */
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  transition: transform 0.3s, z-index 0s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+ /* 6 positions + rotations différentes */
+.features-container .feature:nth-child(1) {
+  top: 15%;    /* ← ajuste cette valeur */
+  left: 0%;     /* ← puis celle‑ci */
+  transform: rotate(-2deg); /* ← ajoute une rotation pour l’effet */
+}
+
+.features-container .feature:nth-child(2) {
+  top: 12%;    /* ← ajuste cette valeur */
+  left: 30%;     /* ← puis celle‑ci */
+  transform: rotate(3deg); /* ← ajoute une rotation pour l’effet */
+}
+
+.features-container .feature:nth-child(3) {
+  top: 18%;    /* ← ajuste cette valeur */
+  left: 60%;     /* ← puis celle‑ci */
+  transform: rotate(2deg); /* ← ajoute une rotation pour l’effet */
+}
+
+.features-container .feature:nth-child(4) {
+  top: 60%;    /* ← ajuste cette valeur */
+  right: 0%;     /* ← puis celle‑ci */
+  transform: rotate(-2deg); /* ← ajoute une rotation pour l’effet */
+}
+
+.features-container .feature:nth-child(5) {
+  top: 65%;    /* ← ajuste cette valeur */
+  right: 35%;     /* ← puis celle‑ci */
+  transform: rotate(-5deg); /* ← ajoute une rotation pour l’effet */
+}
+
+.features-container .feature:nth-child(6) {
+  top: 65%;    /* ← ajuste cette valeur */
+  right: 65%;     /* ← puis celle‑ci */
+  transform: rotate(-3deg); /* ← ajoute une rotation pour l’effet */
+}
+
+/* Hover : redresse et passe devant */
+.features-container .feature:hover {
+  transform: scale(1.05) rotate(0deg);
+  z-index: 10;
+  box-shadow: 0 8px 12px rgba(0,0,0,0.1);
+}
+
+
+
+.feature {
+  background-color: #FFE066;
+  border-radius: 8px;
+  /* on vire padding vertical pour contrôler la hauteur */
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: transform 0.3s;
+  margin: 0;       
+  text-align: center;
+
+  /* Flex centering + même largeur + même hauteur */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 200px;  /* largeur fixe */
+  height: 60px;     /* hauteur fixe identique */
+}
+

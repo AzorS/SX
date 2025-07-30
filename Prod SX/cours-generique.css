@@ -1,0 +1,107 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffeeaa 45%,
+    #ffeeaa 55%,
+    #ffffff 100%
+  );
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+.cours-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 550px;
+  padding-top: 36px;
+}
+
+.cours-titre {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  color: #222;
+  text-align: center;
+}
+
+.cours-sous-titre {
+  font-size: 1.13rem;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.pdf-zone {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  gap: 38px;
+}
+
+.pdf-container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 0;
+  flex: 1 1 830px;
+  display: flex;
+  justify-content: center;
+  min-width: 640px;
+  max-width: 830px;
+  min-height: 500px;
+  overflow: hidden;
+}
+
+.pdf-iframe {
+  width: 800px;
+  height: 520px;
+  border: none;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.pdf-download {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.btn-pdf-download {
+  display: inline-flex;
+  align-items: center;
+  background: #ffe066;
+  color: #222;
+  font-weight: 500;
+  font-size: 1.18rem;
+  padding: 13px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 1px 7px rgba(240,160,20,0.07);
+  border: none;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.btn-pdf-download:hover,
+.btn-pdf-download:focus {
+  background: #ffa500;
+  color: #fff;
+}
+
+.download-icon {
+  font-size: 1.44rem;
+  margin-left: 9px;
+  vertical-align: middle;
+}
+

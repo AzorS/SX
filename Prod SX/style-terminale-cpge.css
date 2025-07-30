@@ -1,0 +1,179 @@
+/* Police de base */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(
+  to bottom,
+  #ffffff 0%,
+  #ffeeaa 40%,
+  #ffeeaa 65%,
+  #ffffff 100%
+);
+  color: #333;
+  text-align: center;
+}
+
+
+/* ----------- HERO PRINCIPAL ----------- */
+.terminale-hero {
+  display: flex;
+  justify-content: space-between;    /* comme l'accueil */
+  align-items: center;               /* comme l'accueil */
+  padding: 0 20px 0 20px;
+  max-width: 1380px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 520px;
+  background: transparent;
+}
+
+.terminale-col.gauche {
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.terminale-col.gauche h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 18px;
+  letter-spacing: 0;
+}
+
+.terminale-col.gauche .subtitle {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 18px;
+  line-height: 1.45;
+  font-weight: 400;
+}
+
+.terminale-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 34px;
+  gap: 10px;
+}
+
+.book-icon {
+  font-size: 1.7rem;
+  margin-right: 6px;
+}
+
+.terminale-desc span:last-child {
+  font-size: 18px;
+  font-weight: 500;
+  color: #222;
+  text-align: center;
+  display: block;
+}
+
+/* ----------- BOUTONS MATIÈRES ----------- */
+.matiere-buttons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+
+.btn-matiere {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(140,110,0,0.05);
+  width: 180px;        /* Largeur fixe pour tous les boutons */
+  min-width: 0;        /* On désactive le min-width */
+  min-height: 54px;
+  padding: 14px 0;     /* On réduit le padding horizontal (plus nécessaire) */
+  background: #FFF8E4;
+  color: #222;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+  outline: none;
+  margin: 0;           /* Pour éviter un débordement inattendu */
+}
+
+/* Couleurs spécifiques (ordre HTML) */
+.btn-matiere.active,
+.btn-matiere:nth-child(1) {
+  background: #FFE066;
+  color: #222;
+}
+.btn-matiere:nth-child(2) {
+  background: #FFD2A5;
+  color: #222;
+}
+.btn-matiere:nth-child(3) {
+  background: #FFF8E4;
+  color: #222;
+}
+
+/* Hover/Focus : orange vif + texte blanc */
+.btn-matiere:hover,
+.btn-matiere:focus {
+  background: #FFA500 !important;
+  color: #fff !important;
+}
+
+/* Effet d'enfoncement */
+.btn-matiere:active {
+  filter: brightness(0.96);
+}
+
+/* ----------- SÉPARATEUR ----------- */
+.terminale-separator {
+  width: 1.5px;
+  background: #333;
+  opacity: 0.3;
+  border-radius: 1px;
+  height: 100%;
+  min-height: 350px;
+  align-self: center;
+  margin: 0 32px;
+}
+
+/* ----------- COLONNE DROITE ----------- */
+.terminale-col.droite {
+  flex: 1;
+  display: flex;
+  position: relative;
+  min-height: 350px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Calculatrice + étudiant */
+.illus-maths {
+  position: absolute;
+  top: -60px;
+  left: 100px;
+  width: 225px;   /* Ajuste la taille pour ressembler à la maquette */
+  z-index: 2;
+}
+
+/* Prof de maths à droite */
+.illus-prof {
+  position: absolute;
+  left: 40%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  width: 225px;   /* Ajuste la taille pour ressembler à la maquette */
+  z-index: 2;
+}
+
+/* Scientifique en bas au centre */
+.illus-physique {
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  width: 225px;   /* Ajuste la taille pour ressembler à la maquette */
+  z-index: 2;
+}
