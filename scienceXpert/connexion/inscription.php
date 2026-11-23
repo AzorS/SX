@@ -23,7 +23,7 @@ if ($data === null) {
 }
 
 // Vérification reCAPTCHA
-$recaptchaSecret = '6Ld4fqcqAAAAAHP96W_Ml4yN29CrrksB-Gs4xN_r'; // Remplace par ta clé secrète Google
+$recaptchaSecret =''; // Remplace par ta clé secrète Google
 $recaptchaResponse = $data->recaptchaResponse;
 
 $recaptchaURL = 'https://www.google.com/recaptcha/api/siteverify';
